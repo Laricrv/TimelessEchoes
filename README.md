@@ -105,6 +105,6 @@ Asegúrate de tener instaladas las siguientes dependencias en tu entorno virtual
     python app.py
 
 
-#### Credits
+#### Credits images
 
     Pictures credits to @wacca005 https://twitter.com/wacca005
