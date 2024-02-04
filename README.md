@@ -31,32 +31,32 @@ Configuración del entorno virtual y del sistema de gestión de base de datos SQ
 Despliegue de la aplicación en un entorno local.
 
 ### Estructura del proyecto:
-Timelessechoes/
-│
-├── app.py
-├── modelos.py
-├── init_db.py
-├── static/
-│   ├── images/
-│   │   ├── profile.jpg
-│   │   └── ... (otras imágenes)
-│   ├── styles/
-│   │   ├── style.css
-│   │   └── ... (otros estilos)
-│   └── ... (otros archivos estáticos)
-│
-├── templates/
-│   ├── crear.html
-│   ├── editar.html
-│   ├── sign-up.html
-│   ├── login.html
-│   ├── landing-page.html
-│   └── index.html│   
-│
-├── venv/ (entorno virtual)
-│
-├── database.sqlite3 (base de datos SQLite)
-└── README.md
+    Timelessechoes/
+    │
+    ├── app.py
+    ├── modelos.py
+    ├── init_db.py
+    ├── static/
+    │   ├── images/
+    │   │   ├── profile.jpg
+    │   │   └── ... (otras imágenes)
+    │   ├── styles/
+    │   │   ├── style.css
+    │   │   └── ... (otros estilos)
+    │   └── ... (otros archivos estáticos)
+    │
+    ├── templates/
+    │   ├── crear.html
+    │   ├── editar.html
+    │   ├── sign-up.html
+    │   ├── login.html
+    │   ├── landing-page.html
+    │   └── index.html│   
+    │
+    ├── venv/ (entorno virtual)
+    │
+    ├── database.sqlite3 (base de datos SQLite)
+    └── README.md
 
 
 
