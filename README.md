@@ -64,7 +64,7 @@ Despliegue de la aplicación en un entorno local.
 
 1. **Clonar el Repositorio:**
    ```bash
-   git clone https://github.com/tuusuario/tuproyecto.git
+   git clone https://github.com/Laricrv/TimelessEchoes.git
    cd tuproyecto
 
 2. **Configuracion del entorno virtual:**
