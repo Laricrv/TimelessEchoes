@@ -55,7 +55,7 @@ Despliegue de la aplicación en un entorno local.
     │
     ├── venv/ (entorno virtual)
     │
-    ├── database.sqlite3 (base de datos SQLite)
+    ├── instance (base de datos SQLite)
     └── README.md
 
 
