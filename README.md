@@ -69,10 +69,10 @@ Despliegue de la aplicación en un entorno local.
 
 2. **Configuracion del entorno virtual:**
 
-python -m venv venv
-source venv/bin/activate  **Linux / macOS**
-# O
-.\venv\Scripts\activate  **Windows**
+    python -m venv venv
+    source venv/bin/activate  **Linux / macOS**
+    # O
+    .\venv\Scripts\activate  **Windows**
 
 
 3. **Instalar dependencias:**
