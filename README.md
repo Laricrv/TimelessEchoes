@@ -93,7 +93,7 @@ Asegúrate de tener instaladas las siguientes dependencias en tu entorno virtual
     pip install Flask-SQLalchemy
 
 - requests
-
+- 
     pip install requests
 
 
