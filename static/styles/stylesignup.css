@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+:root{
+    --background :#d1deec;
+    --foreground:#f1f3f5;
+    --white:#fff;
+    --black:#6e6e6e;
+    --shadow:#76767663;
+    --border:#cfcfcf;
+
+    --bg-color:#fff;
+    --text-color:#221314;
+    --second-color:#5a7184;
+    --main-color:#606c38;
+    --big-font:6rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+    --tang-blue: #1B5AC5ff;
+    --mauve: #ECBAF2ff;
+    --berkeley-blue: #022F5Cff;
+    --celestial-blue: #1C9ADDff;
+    --seasalt: #FAFBFDff;
+    --azure: #2378DDff;
+    --pale-purple: #F2D8F4ff;
+    --tang-blue: #1B5AC5ff;
+    --jordy-blue: #9CB2F3ff;
+    --celestial-blue: #1C9ADDff;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 30px;
+    color: var(--seasalt);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    padding: 10px 22px;
+}
+
+.navbar a:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 24px;
+    transition: ease .40s;
+}
+
+header.sticky{
+    background:var(--bg-color);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sticky .logo{
+    color: var(--text-color);
+}
+.sticky .navbar a{
+    color: var(--text-color);
+}
+.sticky #menu-icon{
+    color: var(--text-color);
+}
+
+body{
+    background: url(/static/images/notused/2.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 40px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+
+}
+
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(24px);
+    border-radius: 12px;
+}
+
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+header{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 45px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+i{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #fff;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+
+}
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px  rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left label{
+    border: none;
+}
+
+label{
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+}
+
+label a{
+    color: var(--mauve);
+    text-decoration: none;
+}
+
+label a:hover{
+    color: var(--mauve);
+    text-decoration: none;
+}
+
+.right{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}

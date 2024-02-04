@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimelessEchoes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/stylecrear.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body style="background-color: #f1f3f5;">
+    
+    <header class="header">
+        <a href="#" class="logo">TimelessEchoes</a>
+
+        <nav class="navbar">
+            <a href="{{ url_for('landing') }}">Home</a>
+            <a href="{{ url_for('index') }}">My Space</a>
+            <a href="{{ url_for('landing') }}">Contact</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('sign_up') }}">Sign Up</a>
+        </nav>
+    </header>
+    
+    
+
+
+
+
+    <section class="home-page-wrapper">
+
+    
+
+        <!--Home LEFT Start-->
+        <div class="home-page">
+            <div class="container-home">
+                <div class="home-weapper">
+                    <!--Home LEFT Start-->
+                    <div class="home-left">
+                        <div class="profile">
+                            <img src="/static/images/profile.jpg" alt="profile">
+                            <h3>Emily Kim</h3>
+                        </div>
+
+                        <div class="pages">
+                            <h4 class="mini-headign">Pages</h4>
+                            <label for="">
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                                <span>messenger</span>
+                            </label>
+                            <label for="">
+                                <i class="fa-brands fa-square-instagram"></i>
+                                <span>instagram</span>
+                            </label>
+                            <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                        </div>
+
+                        <div class="group">
+                            <h4 class="mini-headign">Favorites</h4>
+                            <label for="">
+                                <i class="fa-solid fa-people-group"></i>
+                                <span>Uni 2020</span>
+                            </label>
+                            <label for="">
+                                <i class="fa-solid fa-pen-nib"></i>
+                                <span>Travel november 2021</span>
+                            </label>
+                            <label for="">
+                                <i class="fa-solid fa-e"></i><i class="fa-solid fa-k"></i>
+                                <span>Friends</span>
+                            </label>
+                            <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                        </div>
+
+                        <div class="games">
+                            <h4 class="mini-headign">Games</h4>
+                            <label for="">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Facebook games</span>
+                            </label>
+                            <label for="">
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                                <span>Free Play Games</span>
+                            </label>
+                            <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                        </div>
+
+                        <div class="explore">
+                            <h4 class="mini-headign">Explore</h4>
+                            
+                            <a href="#"><i class="fa-solid fa-user-group"></i>Journals</a>
+                            <a href="#"><i class="fa-solid fa-star"></i>Favorites</a>
+                            <a href="#"><i class="fa-solid fa-bookmark"></i>Memories</a>
+                            <a href="#"><i class="fa-solid fa-clock"></i>Event</a>
+                        
+
+                            <div>
+                                <label for="" class="darktheme">
+                                    <span></span>
+                                </label>
+                                Apply Dark
+                            </div>
+
+                            <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                        </div>
+
+                    </div>
+                
+            
+       
+
+                    <!--Home LEFT END-->
+
+                    <!--Home center START-->
+
+<!--Home center START-->
+<div class="home-center">
+    <div class="home-center-wrapper">
+        <!-- Formulario para editar una publicación -->
+        <div class="fb-post1">
+            <div class="fb-post1-container">
+                <div class="fb-p1-main">
+                    <div class="post-title">
+                        <form method="POST" action="{{ url_for('editar', id=lista.id) }}">
+                            <label for="titulo">Title</label>
+                            <input type="text" id="titulo" name="titulo" value="{{ lista.titulo }}" required>
+
+                            <label for="parrafo">Content</label>
+                            <textarea id="parrafo" name="parrafo" required>{{ lista.parrafo }}</textarea>
+
+                            <button class="createbutton" type="submit">  Edit Post</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Resto del contenido original -->
+    </div> <!-- home center wrapper end -->
+</div> <!-- home center end -->
+<!--Home center END-->
+
+                    <!--Home right star-->
+                    <div class="home-right">
+                        <div class="home-right-wrapper">
+
+                            <div class="event-friend">
+                                <div class="event">
+                                    <h3 class="heading">Upcoming Events <span>see all</span></h3>
+                                    <img src="/static/images/96d2afa0c78eabbd2a3965b394ca26ac.jpg" alt="event-img">
+                                    <div class="event-date">
+                                        <h3>21 <b>july</b></h3>
+                                        <h4>United state of America <span>New York City</span></h4>
+                                    </div>
+                                    <button class="interested"><i class="fa-regular fa-star"></i> interested</button>
+                                </div>
+
+                                <hr>
+                            
+                                
+
+                            </div>
+
+                            <div class="create-page">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-circle-plus"></i>
+                                        <h4>Memories</h4>
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </li>
+                                    <li>
+                                        <img src="/static/images/notused/4.jpg" alt="groups">
+                                    </li>
+                                    <li>
+                                        <b>Uni 2023 <span>5 members</span></b>
+                                        <button>See more</button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="messenger">
+                                <div class="messenger-search">
+                                    <i class="fa-solid fa-user-group"></i>
+                                    <h4>Journals</h4>
+                                    <input type="search" placeholder="Search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <img src="/static/images/11ed2a2f74ec1480f66a2f85b0175a98.jpg" alt="user">
+                                        <b>Studies<span></span></b>
+                                        
+                                    </li>
+
+                                    <li>
+                                        <img src="/static/images/9a777906477be5c5efffe63e1b039a47.jpg" alt="user">
+                                        <b>Favorites foods <span></span></b>
+                                        
+                                    </li>
+
+                                    <li>
+                                        <img src="/static/images/e5586e45c8742d270a9a352aa1ba03ce.jpg" alt="user">
+                                        <b>Work <span>Online</span></b>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div><!-- home right wrapper end -->
+                    </div><!-- home right end -->
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--link to js-->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+
+</body>
+</html>

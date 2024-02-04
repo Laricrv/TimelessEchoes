@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimelessEchoes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/stylesignup.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">TimelessEchoes</a>
+
+        <nav class="navbar">
+            <a href="{{ url_for('landing') }}">Home</a>
+            <a href="{{ url_for('index') }}">My Space</a>
+            <a href="{{ url_for('landing') }}">Contact</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('sign_up') }}">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <header>Register</header>
+            </div>
+
+            <form method="post" action="{{ url_for('sign_up') }}">
+                <div class="input-field">
+                    <input type="text" class="input" name="username" placeholder="Username" required>
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-field">
+                    <input type="email" class="input" name="email" placeholder="Email" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" name="password" placeholder="Password" required>
+                    <i class="bx bx-lock"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" name="repeat_password" placeholder="Repeat Password" required>
+                    <i class="bx bx-lock"></i>
+                </div>
+                <div class="input-field">
+                    <input type="submit" class="submit" value="Register">
+                </div>
+            </form>
+
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" name="" id="check">
+                    <label>I have read and accept the <a href="/terms" target="_blank">Terms and Conditions</a></label>
+                </div>
+                <div class="right">
+                    <label for="">Have an account? <a href="{{ url_for('login') }}">Login</a></a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--link to js-->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
